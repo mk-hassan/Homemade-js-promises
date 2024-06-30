@@ -34,7 +34,7 @@ class CustomPromise {
     try {
       handler(resolve, reject);
     } catch (err) {
-      console.log(err.message);
+      reject(err.message);
     }
   }
 
